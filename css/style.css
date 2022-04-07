@@ -295,7 +295,7 @@ img {
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea,
-#contact button[type="submit"] {
+#contact input[type="submit"] {
     font-weight: 400;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -358,7 +358,7 @@ fieldset {
     resize: none;
 }
 
-#contact button[type="submit"] {
+#contact input[type="submit"] {
     cursor: pointer;
     width: 100%;
     border: none;
@@ -369,16 +369,13 @@ fieldset {
     font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#contact input[type="submit"]:hover {
     background: var(--Secondary-color);
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
 
 #contact input:focus,
 #contact textarea:focus {
@@ -400,6 +397,20 @@ fieldset {
 
 :-ms-input-placeholder {
     color: #888;
+}
+#error_message{
+    margin-bottom: 20px;
+    background: var(--primary-color);
+    color: #FFF;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+   
+  }
+
+.hidden{
+    display: none;
 }
 
 

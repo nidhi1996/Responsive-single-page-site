@@ -58,10 +58,7 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
-
-
   </section>
-
 
   <section class="section-1" id="about">
     <div class="row">
@@ -87,11 +84,15 @@
   </section>
   <section class="contact-form" id="contactus">
     <div class="container">
-      <form id="contact" method="post">
+
+      <form id="contact" name="contact-form" onsubmit="return validate();">
         <h3>Contact Us</h3>
         <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        <div id="error_message">
+
+        </div>
         <fieldset>
-          <input placeholder="Enter Name" type="text"  id="name" required autofocus>
+          <input placeholder="Enter Name" type="text" id="name" required autofocus>
         </fieldset>
         <fieldset>
           <input placeholder="Enter Email Address" type="email" id="email" required>
@@ -103,22 +104,23 @@
           <textarea placeholder="Enter Message" id="message" required></textarea>
         </fieldset>
         <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          <input name="submit" type="submit" id="contact-submit">
         </fieldset>
       </form>
-
-
     </div>
 
-
+    <div class="thankyou hidden">
+      <p>thankyou</p>
+    </div>
   </section>
+
   <footer>
     <div class="footer-content">
       <h3>Footer text</h3>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
     <div class="footer-bottom">
-      <p>copyright © <a href="index.html">comapny Name</a> </p>
+      <p>copyright © <a href="/">comapny Name</a> </p>
       <div class="footer-menu">
         <ul class="f-menu">
           <li><a href="/">Home</a></li>
