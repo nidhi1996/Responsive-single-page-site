@@ -398,7 +398,8 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
-#error_message{
+
+#error_message {
     margin-bottom: 20px;
     background: var(--primary-color);
     color: #FFF;
@@ -406,12 +407,8 @@ fieldset {
     text-align: center;
     font-size: 14px;
     transition: all 0.5s ease;
-   
-  }
-
-.hidden{
-    display: none;
 }
+
 
 
 /* footer */
@@ -429,7 +426,7 @@ fieldset {
     font-size: 28px;
     font-weight: 500;
     text-transform: capitalize;
-    line-height:48px;
+    line-height: 48px;
     color: var(--primary-color);
 }
 
@@ -489,12 +486,13 @@ fieldset {
 
 @media only screen and (max-width: 768px) {
 
- .row{
-     display: block;
- }
+    .row {
+        display: block;
+    }
 
- 
+
 }
+
 @media only screen and (max-width: 500px) {
 
     .prev,
@@ -502,14 +500,18 @@ fieldset {
     .text {
         font-size: 14px
     }
-    
-    .footer-bottom p{float: none;}
-  .footer-menu{
-      float: none;
-  }
-  .footer-bottom{
-    text-align: center;
-}
+
+    .footer-bottom p {
+        float: none;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -525,4 +527,3 @@ fieldset {
         width: 10px;
     }
 }
-
